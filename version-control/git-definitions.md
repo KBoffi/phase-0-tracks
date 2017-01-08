@@ -17,3 +17,5 @@ A commit is a save point and occurs after changes have been made to code in a te
 * What is a merge conflict?
 
 A merge conflict occurs when two people make competing changes to the same line of code in a file, or when someone makes changes to a file that was deleted. 
+
+- KBoffi on January 8, 2017 at 1:24 pm
