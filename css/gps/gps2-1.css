@@ -1,0 +1,29 @@
+section.column-1 {
+  /*display: inline-block;*/
+  float: left;
+  background-color: indigo;
+  /*vertical-align: text-top;*/
+  width: 40%;
+  /*width: 40%;*/
+  padding: 5%; */
+}
+
+section.column-2 {
+ /* display: inline-block;*/
+  float: right;
+  background-color: yellow;
+  /*vertical-align: text-top;*/
+  width: 40%;
+  /*width: 40%;*/
+  padding: 5%;
+}
+div.wrapper{
+  overflow: auto;
+  font-family: Helvetica;
+}
+h1 {
+  text-align:center;
+}
+footer {
+  text-align:center;
+}
