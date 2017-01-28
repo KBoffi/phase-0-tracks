@@ -1,0 +1,48 @@
+Algorithm for Using an Elevator (For a Robot)
+
+- While outside the elevator:
+  - If you are traveling upward:
+    - Press the button shaped like an upward arrow or the superior of two vertically aligned buttons situated along the left- or right-hand perimeter of the elevator doors
+  - Otherwise:
+    - Press the button shaped like a downward arrow or the inferior of two vertically aligned buttons situated along the left- or right-hand perimeter of the elevator doors
+  - Wait for the corresponding button along the top perimeter of the elevator doors to illuminate 
+  - After the doors open, enter the elevator
+- While inside the elevator:
+  - Turn 180 degrees to face the inside of the elevator doors
+  - If you are traveling upward:
+    - On the panel of buttons situated along the left- or right-hand perimeter of the elevator doors, press a button with an integer that has a value greater than the integer of the current floor
+  - Otherwise:
+    - On the panel of buttons situated along the left- or right-hand perimeter of the elevator doors, press a button with an integer that has a value less than the integer of the current floor
+  - After doors close, wait for movement to stop
+  - After the doors open, exit the elevator
+
+
+  Algorithm for Making a Cup of Tea 
+
+- Remove the tea kettle from the heating element  
+- While holding the kettle in your left hand:
+  - Move right in a straight line parallel to the counter where the heating element is until the corner of the counter is reached
+  - Rotate right 90 degrees and move right in a straight line parallel to the counter where the sink is 
+  - When you reach the sink, stop
+  - Remove the lid from the tea kettle and place it on the counter to the right of the sink
+  - While the tea kettle is under the sink faucet:
+    - Use your right hand to turn the right-hand knob to the right to start water flowing
+    - Fill the tea kettle to the line on the inside of the kettle directly across from the spout
+    - Use your right hand to turn the right-hand knob to the left to stop water flowing
+  - Replace the lid on the tea kettle 
+  - Move left in a straight line parallel to the counter where the sink is until the corner of the counter is reached
+  - Rotate 90 degrees and move left in a straight line parallel to the counter where the heating element is 
+  - When you reach the heating element, stop
+  - Place the kettle on top of the heating element
+- Press the button on the heating element with the string “on”
+- While the water is heating:
+  - Open the cabinet directly above the kettle 
+  - Remove a mug and place it on the counter in front of the kettle
+  - Open the box on the counter next to the kettle
+  - Remove a single teabag and place it in the mug
+- If temperature reads 200 on the heating element:
+  - Remove the kettle from the heating element
+  - Place the spout directly above the mug and turn the kettle downward 
+  - When the cup is full of water, turn the kettle upward
+  - Return kettle to the heating element
+
