@@ -71,9 +71,13 @@ vampires_like_garlic
 #skip directly to the result of “Probably a vampire.”
 
 loop do 
-  puts "List any allergies one at a time, and type done when finished."
-allergy = gets.chomp
-break if allergy == "done"
+    puts "List any allergies one at a time, and type done when finished."
+    allergy = gets.chomp
+    if allergy == "sunshine"
+      puts "Probably a vampire."
+    break
+  end
+    break if allergy == "done"
 end
 
 
