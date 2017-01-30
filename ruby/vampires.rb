@@ -18,12 +18,29 @@ garlic_bread = gets.chomp
 
 puts "Would you like to enroll in the company's health insurance? (y/n)"
 insurance = gets.chomp
-  
+
+loop do 
+    puts "List any allergies one at a time, and type done when finished."
+    allergy = gets.chomp
+    if allergy == "sunshine"
+      puts "Probably a vampire."
+    break
+  end
+    break if allergy == "done"
+end
+ employees -= 1
+end
+
+until employees == 0 
+
 correct_age = (2017 - year_born.to_i == age.to_i)
 either = (garlic_bread == "n" || insurance == "n")
 no = (garlic_bread == "n" && insurance == "n") 
 yes = (garlic_bread == "y" || insurance == "y")
 
+allergy = gets.chomp
+
+if allergy != "sunshine"
  if name == ("Drake Cula" || "Tu Fang") 
     puts "Definitely a vampire." 
   elsif correct_age && yes
@@ -35,18 +52,8 @@ yes = (garlic_bread == "y" || insurance == "y")
   else
     puts "Results inconclusive."
 end
-
-loop do 
-    puts "List any allergies one at a time, and type done when finished."
-    allergy = gets.chomp
-    if allergy == "sunshine"
-      puts "Probably a vampire."
-    break
-  end
-    break if allergy == "done"
-end
   employees -= 1
 end
+end
 
-
-
+puts "Actually, never mind! What do these questions have to do with anything? Let's all be friends."
