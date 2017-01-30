@@ -62,4 +62,5 @@ puts "Actually, never mind! What do these questions have to do with anything? Le
 #but I have a difficult time actually putting them into practice. I spent several
 #hours over the course of three days on this, but I couldn't figure out how to get 
 #the result to print if there was NO allergy to sunshine... I would appreciate some
-# feedback on this challenge and a code review. I know there are places for me to improve.
+#feedback on this challenge and a code review. I know there are places for me to improve 
+# and I'd like to discuss those. 
