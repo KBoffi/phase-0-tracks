@@ -3,7 +3,9 @@
 
 #Define variables for client responses
 
-#Convert integers to strings
+#Convert integers in client responses to strings
+
+#Create hash for individual client design details
 
 #Print hash to console
 
@@ -11,17 +13,9 @@
 
 #If changes, update keys
 
-#If no changes and typed "none," skip this step 
+#If no changes and typed "none," 
 
 #Print latest results 
-
-#p design_details[:name]
-#p design_details[:age]
-#p design_details[:city]
-#p design_details[:number_of_children]
-#p design_details[:decor_theme]
-#p design_details[:includes_bathroom]
-#p design_details[:includes_kitchen]
 
 puts "What is your name?"
 name = gets.chomp
@@ -35,10 +29,8 @@ puts "What is your decor theme?"
 decor_theme = gets.chomp
 puts "Does the redesign include your bathroom? (y/n)"
 includes_bathroom = gets.chomp
-includes_bathroom == "y"
 puts "Does the redesign include your kitchen? (y/n)"
 includes_kitchen = gets.chomp
-includes_kitchen == "y"
 
 design_details = {
   :name => "#{name}",
@@ -52,43 +44,27 @@ design_details = {
 
 p design_details
 
-puts "Identify any category where your data is incorrect."
+puts "Identify any category where your data is incorrect. Otherwise, type none."
 revise_data = gets.chomp.to_sym
 
-if revise_data == "none"
-  p design_details
-else
-  puts "Please provide the correct data."
-  new_data = gets.chomp
-  if revise_data == :name
-    design_details[:name] = "#{new_data}"
-  elsif revise_data == :age
-    design_details[:age] = "#{new_data.to_s}"
-  elsif revise_data == :city
-    design_details[:city] = "#{new_data}"
-  elsif revise_data == :number_of_children 
-    design_details[:number_of_children] = "#{new_data}"
-  elsif revise_data == :decor_theme
-    design_details[:decor_theme] = "#{new_data}"
-  elsif revise_data == :includes_bathroom
-    design_details[:includes_bathroom] = "#{new_data}"
-  else revise_data == :includes_kitchen
-    design_details[:includes_kitchen] = "#{new_data}"
-  end
+ if revise_data == :none 
+  else puts "Please provide the correct data."
+    new_data = gets.chomp
+    if revise_data == :name
+      design_details[:name] = "#{new_data}"
+    elsif revise_data == :age
+      design_details[:age] = "#{new_data.to_s}"
+    elsif revise_data == :city
+      design_details[:city] = "#{new_data}"
+    elsif revise_data == :number_of_children 
+      design_details[:number_of_children] = "#{new_data.to_s}"
+    elsif revise_data == :decor_theme
+      design_details[:decor_theme] = "#{new_data}"
+    elsif revise_data == :includes_bathroom
+      design_details[:includes_bathroom] = "#{new_data}"
+    else revise_data == :includes_kitchen
+      design_details[:includes_kitchen] = "#{new_data}"
 end
-p design_details    
-    
+end
 
-    
-    
-    
-    
-#p design_details[:name]
-#p design_details[:age]
-#p design_details[:city]
-#p design_details[:number_of_children]
-#p design_details[:decor_theme]
-#p design_details[:includes_bathroom]
-#p design_details[:includes_kitchen]
-#p design_details[:data]
-#end
+p design_details    
