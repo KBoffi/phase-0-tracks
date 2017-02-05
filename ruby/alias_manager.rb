@@ -19,36 +19,34 @@
 # If the letter isn't a vowel, change it to the next consonant in the list 
 
 
-
 name = ["Felicia", "Torres"]
 name = name.reverse!
 name = name.join
 p name = name.split('')
 
-name[0] == "a"
-
-name.each {|x| puts "This is the letter #{x}"}
-
-
 vowels = ["a", "e", "i", "o", "u"]
 
-def vowel_locator
+new_name = name.each {|letter| p letter.next!}
+
+p new_name.join
+
+# name[0] == "a"
+
+# name.each {|x| puts "This is the letter #{x}"}
+
+
+# vowels = ["a", "e", "i", "o", "u"]
+
+# def vowel_locator
   
-name = ["Felicia", "Torres"]
-name = name.reverse!
-name = name.join
-p name = name.split('')
+# name = ["Felicia", "Torres"]
+# name = name.reverse!
+# name = name.join
+# p name = name.split('')
 
-vowels = ["a", "e", "i", "o", "u"]
-
-index = 0
-if name[index] == "a"
-letter = name[index]
-p letter
-end
+# vowels = ["a", "e", "i", "o", "u"]
 
 
-vowel_locator 
       
       
       
