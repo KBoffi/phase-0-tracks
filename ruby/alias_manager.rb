@@ -11,23 +11,23 @@
 
 name = ["Felicia", "Torres"]
 name = name.reverse!
+p first = name[0].length
+p last = name[1].length
 name = name.join
 name = name.split('')
 
 new_name = name.each {|letter| p letter.next!}
 
+p first_name = new_name.slice(0..first - 1)
+p first_name.join
+p last_name = new_name.slice(first..last + (last-1))
+p last_name.join
 
-last_name = new_name.slice(0..5)
-first_name = new_name.slice(6..12)
+p first = first_name.join
+p last = last_name.join
 
-new_last = last_name.join
-new_first = first_name.join
-
-p new_array = [new_last, new_first]
+new_name = [first, last]
 
 
-
-      
-      
       
       
