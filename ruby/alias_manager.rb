@@ -9,21 +9,15 @@
 
 
 
-# Declare an array with two items: the spy's first name and last name
-# Reverse the order of the items (names) in the array with .reverse
-# Turn the array into a string
-# Split the string into individual letters with .chars or .split
-# Declare an array with each vowel as an item 
+# Reverse the order of the spy's name so last name is first and first name is last
+# Split up the name into individual letters
+# Make a list of vowels in this order: "aeiou"
+# Make a list of consonants in alphabetical order 
+# Compare each letter in the name to the list of vowels 
+# Determine if the letter is a vowel or not
+# If the letter is a vowel, change it to the next vowel in the list
+# If the letter isn't a vowel, change it to the next consonant in the list 
 
-# Write a method that will determine if the letter is a vowel (should return t/f)
-# Pass a block to the method (.each). For each letter in the names array, determine if it is included 
-#     in the vowels array (names_array.each and a code block containing the vowels array and the .include? method
-# This will result in true or false 
-# (New method?) If the result is true, use names_array.map! to change the value of the vowel in the names 
-#     array via a code block containing vowels_array.next  
-# Declare an array with each consonant as an item 
-# (Else) If the result if false, use names_array.map! to change the value of the consonant in the names
-#     array via a code block containing consonants_array.next
 
 
 name = ["Felicia", "Torres"]
@@ -31,12 +25,30 @@ name = name.reverse!
 name = name.join
 p name = name.split('')
 
+name[0] == "a"
+
 name.each {|x| puts "This is the letter #{x}"}
 
-#new_name = name.reverse!.to_s.split('')
 
 vowels = ["a", "e", "i", "o", "u"]
 
+def vowel_locator
+  
+name = ["Felicia", "Torres"]
+name = name.reverse!
+name = name.join
+p name = name.split('')
+
+vowels = ["a", "e", "i", "o", "u"]
+
+index = 0
+if name[index] == "a"
+letter = name[index]
+p letter
+end
+
+
+vowel_locator 
       
       
       
