@@ -27,8 +27,13 @@
 
 
 name = ["Felicia", "Torres"]
+name = name.reverse!
+name = name.join
+p name = name.split('')
 
-new_name = name.reverse!.to_s.split('')
+name.each {|x| puts "This is the letter #{x}"}
+
+#new_name = name.reverse!.to_s.split('')
 
 vowels = ["a", "e", "i", "o", "u"]
 
