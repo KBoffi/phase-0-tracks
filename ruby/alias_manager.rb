@@ -12,33 +12,23 @@
 
 
 #ALTERNATIVE SOLUTION 
-# (reversing the order of the names and swapping every letter for the next)
+# (swapping every letter for the next letter)
 
-name = ["Jacob", "Marley"]
-name = name.reverse!
-x = name[0].length
-y = name[1].length
-name = name.join
-name = name.split('')
+loop do 
+  puts "Enter a name to generate an alias, or type quit if done."
+  user_input = gets.chomp
 
-new_name = name.each {|letter| p letter.next!}
+break if user_input == "quit"
 
-first_name = new_name.slice(0, x)
-last_name = new_name.slice(x, y)
-
-new_first = first_name.join
-new_last = last_name.join
-
-new_alias = [new_first, new_last]
-
-spy_alias = new_alias.join
-
-first = spy_alias.slice(0, x)
-last = spy_alias.slice(x, y)
-
-alias_first = first.ljust(x + 1)
-
-p alias_first + last
+  name = user_input.split('')
+  new_name = name.each {|letter| p letter.next!}
+  print_name = new_name.join
+  secret_alias = print_name.partition("!")
+  alias_first = secret_alias.slice(0)
+  alias_last = secret_alias.slice(2)
+  
+  puts "Alias first name: #{alias_first}. Alias last name: #{alias_last}."
+end
 
 
 
