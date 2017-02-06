@@ -1,3 +1,5 @@
+#5.5 Solo Challenge
+
 # PSEUDOCODE 
 # Reverse the order of the spy's name so last name is first and first name is last
 # Split up the name into individual letters
@@ -9,24 +11,35 @@
 # If the letter isn't a vowel, change it to the next consonant in the list 
 
 
-name = ["Felicia", "Torres"]
+#ALTERNATIVE SOLUTION 
+# (reversing the order of the names and swapping every letter for the next)
+
+name = ["Jacob", "Marley"]
 name = name.reverse!
-p first = name[0].length
-p last = name[1].length
+x = name[0].length
+y = name[1].length
 name = name.join
 name = name.split('')
 
 new_name = name.each {|letter| p letter.next!}
 
-p first_name = new_name.slice(0..first - 1)
-p first_name.join
-p last_name = new_name.slice(first..last + (last-1))
-p last_name.join
+first_name = new_name.slice(0, x)
+last_name = new_name.slice(x, y)
 
-p first = first_name.join
-p last = last_name.join
+new_first = first_name.join
+new_last = last_name.join
 
-new_name = [first, last]
+new_alias = [new_first, new_last]
+
+spy_alias = new_alias.join
+
+first = spy_alias.slice(0, x)
+last = spy_alias.slice(x, y)
+
+alias_first = first.ljust(x + 1)
+
+p alias_first + last
+
 
 
       
