@@ -15,3 +15,26 @@
 # Bark 
 # Chew 
 
+class Puppy
+end
+
+Puppy.methods
+
+duchess = Puppy.new
+fido = Puppy.new
+spot = Puppy.new
+
+spot.class
+# Puppy
+
+duchess == fido
+# false
+
+fido.instance_of?(Array)
+# false
+
+fido.instance_of?(Puppy)
+# true
+
+spot.play_dead
+# Method error; undefined method
