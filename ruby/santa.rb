@@ -22,7 +22,9 @@ def celebrate_birthday(new_age)
 end
 
 def get_mad_at(reindeer_name)
-  @reindeer_ranking[-1] = reindeer_name
+ # @reindeer_ranking[-1] = "#{reindeer_name}"
+ x = @reindeer_ranking.index("#{reindeer_name}")
+ @reindeer_ranking.rotate!(x + 1)
   p @reindeer_ranking
 end
 
@@ -47,7 +49,7 @@ p nick = Santa.new("transgender male", "Chinese")
 
 p nick.celebrate_birthday(45)
 
-nick.get_mad_at("Dancer")
+nick.get_mad_at("Cupid")
 
 p nick.gender_change("female")
 
