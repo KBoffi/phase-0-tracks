@@ -20,8 +20,16 @@ end
 
 #DRIVER CODE ======================================
 
-nick = Santa.new
+nick = Santa.new("transgender male", "Chinese")
 
 nick.speak
 nick.eat_milk_and_cookies("biscotti")
+
+santas = []
+
+santas << Santa.new("female", "American Indian")
+santas << Santa.new("intersex", "Hispanic")
+santas << Santa.new("transgender woman", "White")
+
+p santas
 
