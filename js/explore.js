@@ -18,4 +18,14 @@ function reverseString(string) {
   return result
 } 
 
-reverseString(string)
+// DRIVER CODE ====================================
+
+backword = reverseString("programming")
+
+ 
+if (1 == 1) {
+console.log('The new word is ' + backword);
+}
+else {
+  console.log('Oh, well.');
+}
