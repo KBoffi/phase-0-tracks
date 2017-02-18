@@ -19,29 +19,28 @@ garlic_bread = gets.chomp
 puts "Would you like to enroll in the company's health insurance? (y/n)"
 insurance = gets.chomp
 
-loop do 
-    puts "List any allergies one at a time, and type done when finished."
-    allergy = gets.chomp
-    if allergy == "sunshine"
-      puts "Probably a vampire."
-    break
-  end
-    break if allergy == "done"
-end
- employees -= 1
-end
 
-until employees == 0 
+puts "List any allergies you have one at a time, and type done when finished."
+allergy = gets.chomp 
+
+while allergy != ("sunshine" || "done")
+puts "List any allergies you have one at a time, and type done when finished."
+allergy = gets.chomp 
+end
 
 correct_age = (2017 - year_born.to_i == age.to_i)
 either = (garlic_bread == "n" || insurance == "n")
 no = (garlic_bread == "n" && insurance == "n") 
 yes = (garlic_bread == "y" || insurance == "y")
 
-allergy = gets.chomp
+if allergy == "sunshine"
+  puts "Probably a vampire."
+else allergy == "done"
+  allergies == true 
+end
 
-if allergy != "sunshine"
- if name == ("Drake Cula" || "Tu Fang") 
+while allergies
+  if name == ("Drake Cula" || "Tu Fang") 
     puts "Definitely a vampire." 
   elsif correct_age && yes
     puts "Probably not a vampire." 
@@ -56,8 +55,9 @@ end
 end
 end
 
-puts "Actually, never mind! What do these questions have to do with anything? Let's all be friends."
 
+
+puts "Actually, never mind! What do these questions have to do with anything? Let's all be friends."
 #I struggled a lot with this challenge. I understand and can explain the concepts, 
 #but I have a difficult time actually putting them into practice. I spent several
 #hours over the course of three days on this, but I couldn't figure out how to get 
