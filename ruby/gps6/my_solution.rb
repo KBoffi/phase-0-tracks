@@ -95,3 +95,20 @@ STATE_DATA.each do |state, state_data|
 
 #=======================================================================
 # Reflection Section
+
+# What are the differences between the two different hash syntaxes shown in the state_data file?
+# Both strings ("string") and symbols (population_density:) are used as keys in this hashy hash.
+
+# What does require_relative do? How is it different from require?
+# Require_relative links code in one document to another so that certain programs or tests can run.
+# It is used when the two files are in the same directory. 
+# Require is used to require a method, or gem -- code that already exists that others have written. 
+
+# What are some ways to iterate through a hash?
+# You can use .each or .sort to iterate through a hash. 
+
+# When refactoring virus_effects, what stood out to you about the variables, if anything?
+# The variables in the virus_effects method were not instance variables. 
+
+# What concept did you most solidify in this challenge?
+# Iterating through hashes is still difficult for me, and it was very helpful to have my pair's guidance on this. 
