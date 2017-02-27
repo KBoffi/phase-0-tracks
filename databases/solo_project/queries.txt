@@ -1,0 +1,40 @@
+1. Display the information in one table (either table is fine).
+
+sqlite> SELECT * FROM books; 
+1|Harriet the Spy|Louise Fitzhugh|6667778889991|false|2
+2|Breakfast of Champions|Kurt Vonnegut|5671234998000|false|1
+3|One Hundred Years of Solitude|Gabriel Garcia Marquez|7761899983459|true|2
+
+2. Update an item that meets some condition (you can choose a condition that makes sense).
+
+sqlite> UPDATE books SET first_edition="true" WHERE title="Breakfast of Champions";
+
+3. Display the information in both tables using one query.
+
+sqlite> SELECT * FROM books, libraries;
+1|Harriet the Spy|Louise Fitzhugh|6667778889991|false|2|1|Henry P. Levy Library|Student Center
+1|Harriet the Spy|Louise Fitzhugh|6667778889991|false|2|2|Locatelli Library|West Campus
+2|Breakfast of Champions|Kurt Vonnegut|5671234998000|true|1|1|Henry P. Levy Library|Student Center
+2|Breakfast of Champions|Kurt Vonnegut|5671234998000|true|1|2|Locatelli Library|West Campus
+3|One Hundred Years of Solitude|Gabriel Garcia Marquez|7761899983459|true|2|1|Henry P. Levy Library|Student Center
+3|One Hundred Years of Solitude|Gabriel Garcia Marquez|7761899983459|true|2|2|Locatelli Library|West Campus
+
+4. Display a narrower selection of columns (fewer columns than all of them, in other words) from both tables using one query.
+
+sqlite> SELECT * FROM books, libraries WHERE books.library_id=2 and libraries.id=2;
+1|Harriet the Spy|Louise Fitzhugh|6667778889991|false|2|2|Locatelli Library|West Campus
+3|One Hundred Years of Solitude|Gabriel Garcia Marquez|7761899983459|true|2|2|Locatelli Library|West Campus
+
+5. Delete an item that meets some condition (you can choose a condition that makes sense).
+
+sqlite> DELETE FROM books WHERE first_edition="false";
+
+INNER JOINS-- 
+
+sqlite> SELECT books.title, libraries.name FROM books JOIN libraries ON books.library_id = libraries.id;
+Breakfast of Champions|Henry P. Levy Library
+One Hundred Years of Solitude|Locatelli Library
+
+sqlite> SELECT books.author, libraries.location FROM books JOIN libraries ON books.library_id = libraries.id;
+Kurt Vonnegut|Student Center
+Gabriel Garcia Marquez|West Campus
