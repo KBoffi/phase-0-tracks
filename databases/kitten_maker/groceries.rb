@@ -28,11 +28,21 @@ db.execute(create_table_cmd)
 # so. many. kittens. 
 #KittenExplosion
 
+puts "Add an item to the list."
+item = gets.chomp 
+puts "Add a quantity for the item."
+quantity = gets.chomp.to_i
+
 def add_item(db, item, quantity)
-  db.execute("INSERT INTO groceries (item, quantity) VALUES ('milk', 2)")
+  db.execute("INSERT INTO groceries (item, quantity) VALUES (?, ?)", [item, quantity])
 end
 
-add_item(db, "milk", 2)
+add_item(db, "#{item}", "#{quantity}")
+
+def remove_item(db, item, quantity)
+  db.execute("DELETE FROM groceries WHERE (item, quantity) VALUES (?, ?)", [item, quantity])
+end
+
 
 # explore ORM by retrieving data
 # kittens = db.execute("SELECT * FROM kittens")
