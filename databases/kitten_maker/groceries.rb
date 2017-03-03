@@ -27,14 +27,12 @@ db.execute(create_table_cmd)
 # add LOOOOTS of kittens!
 # so. many. kittens. 
 #KittenExplosion
-puts "Add an item to the list."
-name = gets.chomp 
-quantity = gets.chomp.to_i
 
 def add_item(db, item, quantity)
-  db.execute("INSERT INTO groceries (item, quantity) VALUES (#{name}, #{quantity})", [name, quantity])
+  db.execute("INSERT INTO groceries (item, quantity) VALUES ('milk', 2)")
 end
 
+add_item(db, "milk", 2)
 
 # explore ORM by retrieving data
 # kittens = db.execute("SELECT * FROM kittens")
