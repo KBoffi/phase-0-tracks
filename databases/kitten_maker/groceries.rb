@@ -39,10 +39,17 @@ end
 
 add_item(db, "#{item}", "#{quantity}")
 
-def remove_item(db, item, quantity)
-  db.execute("DELETE FROM groceries WHERE (item, quantity) VALUES (?, ?)", [item, quantity])
+puts "Enter purchased items to be removed from list."
+purchased = gets.chomp 
+
+def remove_item(db, purchased)
+  db.execute("DELETE FROM groceries WHERE item='#{purchased}'")
 end
 
+remove_item(db, "#{purchased}")
+
+puts "Type 'list' to view the current grocery list."
+list = 
 
 # explore ORM by retrieving data
 # kittens = db.execute("SELECT * FROM kittens")
