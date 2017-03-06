@@ -8,6 +8,7 @@ RESOURCES:
 
 "JavaScript & JQuery" by Jon Duckett
 (I plan to spend the majority of my time with this book, as I found his HTML & CSS book more helpful than any HTML/CSS resources I found online and I assume this one will be equally clear and illustrative.)
+* I found this surprisingly dense and not straightforward. Perhaps that's because the jQuery chapters came after many JavaScript chapters and assumed more comprehensive JavaScript knowledge than I have. 
 
 Supplemental -- 
 https://www.tutorialspoint.com/jquery/jquery-overview.htm
@@ -15,9 +16,11 @@ https://www.tutorialspoint.com/jquery/jquery-overview.htm
 
 https://www.w3schools.com/jquery/
 (Examples, tests, references)
+* Playing with code examples here was a huge help. Might be best to start with this next time. W3schools also has consistently clear and readable documentation. 
 
 https://www.youtube.com/watch?v=hMxGhHNOkCU
 (8 mins, can watch in its entirety)
+* This video was surprisingly the most helpful of all my resources. I found the text and tutorialspoint pretty difficult to digest, but watching the video last helped me put it all together.  
 
 https://www.youtube.com/playlist?list=PL3877C5434C042349
 (a series of mid-length videos to pick and choose from)
@@ -32,3 +35,5 @@ I plan to hold off on testing, instead getting through the material and taking n
 BREAKS:
 
 I plan to take one 10-min. break every hour. 
+
+* I took more frequent breaks than this; one hour is a long time to sit and passively study, even if I'm taking notes. 
